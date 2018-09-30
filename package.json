@@ -1,0 +1,35 @@
+{
+    "name": "cereal",
+    "displayName": "Cereal",
+    "description": "A totally useless language which compiles into java",
+    "version": "0.0.1",
+    "publisher": "Schrotty",
+    "license": "MIT",
+    "homepage": "https://github.com/Schrotty",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cer",
+            "aliases": ["Cereal", "cer"],
+            "extensions": [".cer"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cer",
+            "scopeName": "source.untitled",
+            "path": "./syntaxes/cer.tmLanguage.json"
+        }]
+    },
+    "bugs": {
+        "url": "https://github.com/Schrotty/vscode-cereal/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Schrotty/vscode-cereal"
+    }
+}

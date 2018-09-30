@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cereal",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"name": "entity.name.class",
+			"begin": "",
+			"end": "",
+			"patterns": [
+				{
+					"name": "keyword.control",
+					"match": "bowl"
+				}
+			]
+		},
+		{
+			"name": "string.unquoted",
+			"begin": "",
+			"end": "",
+			"patterns": [
+				{
+					"name": "storage.type",
+					"match": "ingredient"
+				},
+				{
+					"name": "storage.modifier",
+					"match": "\\b(common|rare|delicious|important|post|pre)\\b"
+				},
+				{
+					"name": "entity.name.type",
+					"match": "_([a-zA-z]|[0-9])*"
+				}
+			]
+		},
+		{
+			"name": "string.quoted",
+			"begin": "<!--",
+			"end": "--!>",
+			"patterns": [
+				{
+					"name": "comment.block",
+					"match": "."
+				}
+			]
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cer",
+				"match": "\\b(if|while|for|return)\\b"
+			}, {
+				"name": "keyword.operator.cer",
+				"match": "\\b(<< | =>)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cer",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cer",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.untitled"
+}
