@@ -2,7 +2,7 @@
     "name": "cereal",
     "displayName": "Cereal",
     "description": "A totally useless language which compiles into java",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Schrotty",
     "license": "MIT",
     "homepage": "https://github.com/Schrotty",
@@ -14,15 +14,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "cer",
-            "aliases": ["Cereal", "cer"],
-            "extensions": [".cer"],
+            "id": "cereal",
+            "aliases": ["Cereal", "cereal"],
+            "extensions": [".cereal"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "cer",
+            "language": "cereal",
             "scopeName": "source.untitled",
-            "path": "./syntaxes/cer.tmLanguage.json"
+            "path": "./syntaxes/cereal.tmLanguage.json"
         }]
     },
     "bugs": {
