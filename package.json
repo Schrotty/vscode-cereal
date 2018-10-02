@@ -9,8 +9,16 @@
     "engines": {
         "vscode": "^1.27.0"
     },
+    "icon": "img/icon256.png",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
     "categories": [
         "Programming Languages"
+    ],
+    "keywords": [
+        "esolang", "cereal"
     ],
     "contributes": {
         "languages": [{
