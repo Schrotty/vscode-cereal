@@ -6,6 +6,7 @@
     "publisher": "Schrotty",
     "license": "MIT",
     "homepage": "https://github.com/Schrotty",
+    "preview": true,
     "engines": {
         "vscode": "^1.27.0"
     },

@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.0
+
+New readme
+
 ## 0.0.2
 
 Changing file ending to *.cereal
